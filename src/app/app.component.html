@@ -2,6 +2,16 @@
   <h1>Angular Lifecycle Hooks</h1>
 </header>
 <main>
-  <div class="actions"></div>
-  <div class="cards"></div>
+  <div class="actions">
+    <div>
+      Count: {{ count }}
+      <button (click)="count = count + 1">Inc</button>
+    </div>
+  </div>
+  <div class="cards">
+    <app-init-hook></app-init-hook>
+    <app-changes-hook></app-changes-hook>
+    <app-check-hook></app-check-hook>
+    <app-destroy-hook></app-destroy-hook>
+  </div>
 </main>

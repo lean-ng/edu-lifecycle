@@ -10,3 +10,20 @@ html {
 body {
   margin: 0;
 }
+
+.card {
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.card h2 {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  margin: 0 0 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.card p {
+  padding: 0 1rem;
+}
