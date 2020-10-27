@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CounterService } from './counter.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  count = 0;
+
+  constructor(public svc: CounterService) {
+    svc.count = this.count;
+  }
+
+  count = 1;
+  timerVisible = false;
 }

@@ -5,13 +5,18 @@
   <div class="actions">
     <div>
       Count: {{ count }}
-      <button (click)="count = count + 1">Inc</button>
+      <button (click)="count = count + 1; svc.count = count;">Inc</button>
+      <input type="text" (input)="true">
+      <button (click)="timerVisible = false">Hide Uhr</button>
     </div>
   </div>
   <div class="cards">
-    <app-init-hook></app-init-hook>
-    <app-changes-hook></app-changes-hook>
+    <app-init-hook [currency]="'EUR'"></app-init-hook>
+    <app-changes-hook [third]="count - count % 2" [count]="count" [secondary]="count - count % 2" [base]="'EUR'"></app-changes-hook>
     <app-check-hook></app-check-hook>
-    <app-destroy-hook></app-destroy-hook>
+    <app-destroy-hook *ngIf="timerVisible"></app-destroy-hook>
+    <app-content-projection>
+      <app-content-child></app-content-child>
+    </app-content-projection>
   </div>
 </main>

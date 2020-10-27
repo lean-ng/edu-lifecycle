@@ -9,6 +9,9 @@ import { InitHookComponent } from './init-hook/init-hook.component';
 import { ChangesHookComponent } from './changes-hook/changes-hook.component';
 import { DestroyHookComponent } from './destroy-hook/destroy-hook.component';
 import { CheckHookComponent } from './check-hook/check-hook.component';
+import { ContentProjectionComponent } from './content-projection/content-projection.component';
+import { ViewChildComponent } from './view-child/view-child.component';
+import { ContentChildComponent } from './content-child/content-child.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { CheckHookComponent } from './check-hook/check-hook.component';
     InitHookComponent,
     ChangesHookComponent,
     DestroyHookComponent,
-    CheckHookComponent
+    CheckHookComponent,
+    ContentProjectionComponent,
+    ViewChildComponent,
+    ContentChildComponent
   ],
   imports: [
     BrowserModule,
