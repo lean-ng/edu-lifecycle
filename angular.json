@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "edu-lifecycle"
+    }
+  },
+  "defaultProject": "edu-lifecycle",
+  "cli": {
+    "analytics": false
+  }
 }
